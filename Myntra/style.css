@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    cursor: pointer;
+}
+
+body {
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    /* background-color: red; */
+    /* overflow-X: hidden; */
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background-color: #fff;
+    height: 80px;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.logo {
+    height: 36px;
+}
+
+.logo_container {
+    margin-left: 2%;
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 515px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nav_bar a {
+    color: #282c3f;
+    font-size: 14px;
+    letter-spacing: .3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px 0;
+    border-bottom: 4px solid #fff;
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid #f54e77;
+}
+
+.nav_bar a sup {
+    color: #ff3f6c;
+    font-size: 10px;
+    margin: 3px;
+}
+
+.search_bar {
+    height: 40px;
+    min-width: 515px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 5px 0 0 5px; /*top_left, top_right, bottom_right, bottom_left*/
+}
+
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    border: none;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    text-align: start;
+}
+
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action_icon {
+    cursor: pointer;
+}
+
+
+/* Main */
+
+.banner_container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px 0;
+    justify-items: center;
+}
+
+.banner_image {
+    display: flex;
+    cursor: pointer;
+    /* height: 187px; */
+    width: 90%;
+}
+
+
+
+.image_container_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.image_container_1 img {
+    width: 100%;
+    height: 560px;
+    cursor: pointer;
+}
+
+.image_container_2 {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.image_container_2 img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.image_container_3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.image_container_3 img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.image_container_4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.image_container_4 img {
+    width: 50%;
+    height: auto;
+}
+
+.image_container_5 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.image_container_5 img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.image_container_6 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+}
+
+
+.image_container_6 img {
+    width: 244px;
+    height: 320px;
+    overflow-y: hidden;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.indicator.active {
+    background-color: #333; 
+}
+
+.image_container_7 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.image_container_7 img {
+    width: 100%;
+    height: 145px;
+    cursor: pointer;
+}
+
+.image_container_8 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image_container_8 img {
+    width: 313px;
+    height: 489px;
+}
+
+.image_container_9 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image_container_9 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+footer {
+    width: 1880px;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px 0 40px 0;
+    background: #FAFBFC;
+}
+
+.footer_content {
+    width: 1080px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px 0 40px 0;
+    background: #FAFBFC;
+}
+
+.shoplinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 175px;
+    height: 425px;
+    padding: 0 20px 0 0;
+}
+
+.shoplinks p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #282c3f;
+    margin: 19px 0 12px;
+}
+
+.shoplinks a {
+    text-decoration: none;
+    color: #696b79;
+    padding: 0 0 5px;
+    width: 155px;
+    height: 24px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.customerpolicy {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 175px;
+    height: 425px;
+    padding: 0 20px 0 0;
+}
+
+.customerpolicy p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #282c3f;
+    margin: 19px 0 12px;
+}
+
+.customerpolicy a {
+    text-decoration: none;
+    color: #696b79;
+    padding: 0 0 5px;
+    width: 155px;
+    height: 24px;
+    font-size: 15px;
+}
+
+.app {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #282c3f;
+    margin: -3px 0 0;
+    padding: 0 0 25px;
+}
+
+.app p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #282c3f;
+    margin: 19px 0 12px;
+}
+
+.app img {
+    width: 140px;
+    height: 42px;
+    margin: 0 10px 0 0;
+}
+
+.promises {
+    display: flex;
+    width: 250px;
+    height: 159px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.promises strong {
+    color: #282c3f;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.promise_one {
+    display: flex;
+}
+
+.promise_one img {
+    margin-right: 20px;
+}
+
+.promise_two {
+    display: flex;
+}
+
+.promise_two img {
+    margin-right: 20px;
+}
+
+.one::after {
+    content: ' guarantee for all products at myntra.com ';
+    color: #696b79;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.two::after {
+    content: ' of receiving your order ';
+    color: #696b79;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+.popular-searches {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 460px;
+    margin-right: 410px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.popular-searches h3 {
+    font-size: 12px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 19px 0 12px;
+    font-weight: bold;
+}
+
+.popular-searches p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.popular-searches p a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+.footer-meta {
+    width: 965px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 21px;
+}
+
+.contact {
+    color: #696b79;
+}
+
+.copywrite {
+    color: #696b79;
+    margin-left: 100px;
+}
+
+.company {
+    color: #696b79;
+    margin-left: 100px;
+}
+
+.popular-searches>.para {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    margin: 19px 0 12px;
+    width: 100%;
+}
+
+.contact a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #526cd0;
+}
+
+.banner {
+    display: flex;
+    width: 1400px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner img {
+    width: 451px;
+    height: 276px;
+}
+
+.para::after {
+    content: ' ';
+    width: 845px;
+    border: 1px solid #eaedff;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
